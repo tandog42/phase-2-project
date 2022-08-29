@@ -2,7 +2,7 @@ import React from 'react'
 
 function Truck() {
   return (
-    <div>Truck</div>
+    <div>Trunhck</div>
   )
 }
 
