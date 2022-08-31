@@ -1,9 +1,15 @@
-import React from 'react'
-
-function TrucksContainer() {
+import React from "react";
+import Truck from "./Truck";
+function TrucksContainer({ trucks }) {
   return (
-    <div>TrucksContainer</div>
-  )
-}
+  <ul className="cards">
 
-export default TrucksContainer
+  {trucks.map(truck => (
+    <Truck 
+    key={truck.id} 
+    truck={truck} />
+  ))}
+  </ul>
+  )}
+
+export default TrucksContainer;

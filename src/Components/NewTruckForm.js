@@ -2,7 +2,7 @@ import React from 'react'
 
 function NewTruckForm() {
   return (
-    <div>NewTnruckForm</div>
+    <div>NewTruckForm</div>
   )
 }
 

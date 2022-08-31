@@ -1,0 +1,94 @@
+{
+  "trucks": [
+    {
+      "id": 1,
+      "year": "2013",
+      "make": "Ford",
+      "model": "F-150",
+      "color": "Black",
+      "mileage": "280,000",
+      "price": "12,000",
+      "url": "https://i.imgur.com/8lhcrmj.jpeg"
+    },
+    {
+      "id": 2,
+      "year": "1972",
+      "make": "Chevrolet",
+      "model": "K20",
+      "color": "Dark Grey",
+      "mileage": "87,000",
+      "price": "17,999",
+      "url": "https://i.imgur.com/ZghmbTo.jpeg"
+    }, 
+    {
+      "id": 3,
+      "year": "2006",
+      "make": "Toyota",
+      "model": "Trundra",
+      "color": "Grey",
+      "mileage": "296,000",
+      "price": "8,999",
+      "url": "https://i.imgur.com/K6DX8VF.jpeg"
+    },
+     {
+      "id": 4,
+      "year": "1958",
+      "make": "Ford",
+      "model": "F-250",
+      "color": "Green",
+      "mileage": "54,000",
+      "price": "23,999",
+      "url": "https://i.imgur.com/VD0Q1TZ.jpeg"
+    },
+     {
+      "id": 5,
+      "year": "1978",
+      "make": "Ford",
+      "model": "Powerstroke",
+      "color": "Navy Blue",
+      "mileage": "137,000",
+      "price": "14,990",
+      "url": "https://i.imgur.com/P16S9zy.jpeg"
+    }, 
+    {
+      "id": 6,
+      "year": "1948",
+      "make": "Ford",
+      "model": "F1",
+      "color": "Red",
+      "mileage": "34,000",
+      "price": "15,990",
+      "url": "https://i.imgur.com/gSFOvWI.jpeg"
+    },
+     {
+      "id": 7,
+      "year": "1965",
+      "make": "Chevrolet",
+      "model": "C10",
+      "color": "Blue",
+      "mileage": "32,000",
+      "price": "21,500",
+      "url": "https://i.imgur.com/S1Aj4ol.jpeg"
+    },
+    {
+      "id": 8,
+      "year": "1995",
+      "make": "Toyota",
+      "model": "Tacoma Safari",
+      "color": "Red",
+      "mileage": "167,000",
+      "price": "9,990",
+      "url": "https://i.imgur.com/KIUXU7n.jpeg"
+    },
+    {
+      "id": 9,
+      "year": "1950",
+      "make": "Chevrolet",
+      "model": "3100",
+      "color": "Black",
+      "mileage": "15,000",
+      "price": "28,950",
+      "url": "https://i.imgur.com/xXmzH4a.jpeg"
+    }
+  ]
+}

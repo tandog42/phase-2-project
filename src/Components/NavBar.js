@@ -7,7 +7,8 @@ import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import AdbIcon from "@mui/icons-material/Adb";
-const pages = ["Trucks for Sale", "Add a Truck", "About Us"];
+import { Link } from "react-router-dom";
+const pages = [ { path: '/trucks', label: 'Trucks for Sale' },{ path: '/trucks/new', label: "Add a Truck" }, { path: '/aboutus', label: "About Us"}] 
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -33,7 +34,7 @@ function NavBar() {
               textDecoration: "none",
             }}
           >
-            Welcome to Vehicle Marketplace!
+              Used Trucks For Sale!
           </Typography>
 
           <Menu
@@ -57,13 +58,15 @@ function NavBar() {
 
           <Box sx={{  display: {  md: "flex" } }}>
             {pages.map(page => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+               <Link to= {page.path}>
+               <Button
+                key={page.path}
+                
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                {page.label}
               </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
