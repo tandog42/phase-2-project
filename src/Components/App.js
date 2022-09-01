@@ -6,8 +6,11 @@ import TrucksContainer from "./TrucksContainer";
 import AboutUs from "./AboutUs";
 import NewTruckForm from "./NewTruckForm";
 
+
 function App() {
   const [trucks, setTrucks] = useState([])
+
+  
 
 useEffect (() => {
   fetch("http://localhost:3000/trucks")
@@ -30,7 +33,7 @@ useEffect (() => {
         <Route path="/trucks">
           <TrucksContainer trucks={trucks}/>
         </Route>
-        <Route path="/trucks/new">
+        <Route path="/new">
           <NewTruckForm />
         </Route>
       </Switch>

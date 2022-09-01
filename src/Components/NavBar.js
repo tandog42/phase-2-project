@@ -8,7 +8,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
-const pages = [ { path: '/trucks', label: 'Trucks for Sale' },{ path: '/trucks/new', label: "Add a Truck" }, { path: '/aboutus', label: "About Us"}] 
+const pages = [ { path: '/trucks', label: 'Trucks for Sale' },{ path: '/new', label: "Add a Truck" }, { path: '/aboutus', label: "About Us"}] 
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);

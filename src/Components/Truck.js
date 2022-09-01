@@ -1,20 +1,19 @@
 import React from "react";
 
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
 
 function Truck({ truck }) {
   return (
-    <Card >
-      
+    <div >
+      <Card>
         <CardMedia
           component="img"
           height="250"
           image={truck.url}
-          alt={truck.make }
+          alt={truck.make}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -28,8 +27,8 @@ function Truck({ truck }) {
             Price: ${truck.price}
           </Typography>
         </CardContent>
-      
-    </Card>
+      </Card>
+    </div>
   );
 }
 export default Truck;
