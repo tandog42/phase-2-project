@@ -84,4 +84,19 @@ ul.no-bullets {
   padding-left: 48.5rem;
 }
 
-.Text
+.input-form {
+  text-align: center;
+  margin-top: 10rem;
+  
+}
+
+#outlined-basic {
+  background-color: lightgray;
+  align-content: center;
+  font-size: large;
+  color: black;
+  
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  color: white;
+}
