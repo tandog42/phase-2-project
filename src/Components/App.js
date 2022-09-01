@@ -27,14 +27,15 @@ useEffect (() => {
         <Route path="/aboutus">
           <AboutUs />
         </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
+        
         <Route path="/trucks">
           <TrucksContainer trucks={trucks}/>
         </Route>
         <Route path="/new">
           <NewTruckForm />
+        </Route>
+        <Route exact path="/">
+          <Home />
         </Route>
       </Switch>
     </div>

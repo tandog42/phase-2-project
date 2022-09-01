@@ -1,5 +1,5 @@
 body {
-  background-image: url('./images/11400.jpeg');
+  background-image: url('./images/115.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -18,28 +18,31 @@ code {
     monospace;
 }
 
+.HomePage {
+  text-align: center;
+  padding-top: 10rem;
+  color: white;
+}
 
 
 
+/* Position on cards */
   .truck-container {
     height: 100%;
-    width: 93%;
-    padding-left: 6em;
-   align-items: center;
+    width: 91%;
+    padding-left: 10em;
+   
   }
 
+
+  /* Indv card */
 .cards {
-  
-  
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
    row-gap: 25px;
-  
-
 }
-
 .card {
   
   box-shadow: 0 0 7px 0 #ddd;
@@ -47,6 +50,8 @@ code {
   border: 1px solid #ccc;
   width: 300px;
 }
+
+/* cards image */
 .card .image img {
   
   max-width: 300px;
@@ -54,3 +59,29 @@ code {
   width: auto;
   height: auto;
 }
+
+.about {
+  color: white;
+  text-align: center;
+  padding-left: 30rem;
+  padding-right: 30rem;
+
+  font-size: x-large;
+}
+
+.sales-hours {
+  color: white;
+  text-align: center;
+  padding-bottom:10rem;
+  font-size: xx-large;
+}
+
+ul.no-bullets {
+  list-style-type:none ;
+}
+.sales-table {
+  text-align: center;
+  padding-left: 48.5rem;
+}
+
+.Text

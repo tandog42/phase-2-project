@@ -8,7 +8,12 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
-const pages = [ { path: '/trucks', label: 'Trucks for Sale' },{ path: '/new', label: "Add a Truck" }, { path: '/aboutus', label: "About Us"}] 
+
+const pages = [
+  { path: "/trucks", label: "Trucks for Sale" },
+  { path: "/new", label: "Add a Truck" },
+  { path: "/aboutus", label: "About Us" },
+];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -24,6 +29,9 @@ function NavBar() {
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
+            noWrap
+            component="a"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -32,9 +40,10 @@ function NavBar() {
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
+              
             }}
           >
-              Used Trucks For Sale!
+            Midwest Trucks
           </Typography>
 
           <Menu
@@ -56,16 +65,17 @@ function NavBar() {
             }}
           ></Menu>
 
-          <Box sx={{  display: {  md: "flex" } }}>
+          <Box sx={{ display: "flex" }}>
             {pages.map(page => (
-               <Link to= {page.path}>
-               <Button
-                key={page.path}
-                
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page.label}
-              </Button>
+              <Link to={page.path}>
+                <Button
+                  key={page.path}
+                  sx={{ color: "white" }}
+                >
+                  {page.label}
+                  
+                </Button>
+
               </Link>
             ))}
           </Box>
