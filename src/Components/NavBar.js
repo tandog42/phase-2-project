@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import AdbIcon from "@mui/icons-material/Adb";
+import CarCrashSharpIcon from '@mui/icons-material/CarCrashSharp';
 import { Link } from "react-router-dom";
 
 const pages = [
@@ -26,7 +26,7 @@ function NavBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <CarCrashSharpIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
