@@ -89,36 +89,7 @@
       "mileage": "gsdgsd",
       "price": "gsdgs",
       "id": 9
-    },
-    {
-      "year": "erewrw",
-      "make": "ewrwerw",
-      "model": "rerwr",
-      "color": "ewrwer",
-      "url": "rerwr",
-      "mileage": "rere",
-      "price": "werwrw",
-      "id": 10
-    },
-    {
-      "year": "err",
-      "make": "wer",
-      "model": "",
-      "color": "",
-      "url": "",
-      "mileage": "",
-      "price": "",
-      "id": 11
-    },
-    {
-      "year": "rewr",
-      "make": "",
-      "model": "",
-      "color": "",
-      "url": "",
-      "mileage": "",
-      "price": "",
-      "id": 12
     }
+    
   ]
 }
