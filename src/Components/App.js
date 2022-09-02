@@ -21,6 +21,9 @@ function App() {
     <div className="App">
       <NavBar />
       <Switch>
+      <Route exact path="/">
+          <Home />
+        </Route>
         <Route path="/aboutus">
           <AboutUs />
         </Route>
@@ -28,12 +31,10 @@ function App() {
         <Route path="/trucks">
           <TrucksContainer trucks={trucks} />
         </Route>
-        <Route path="/new">
+        <Route path="/truck/new">
           <NewTruckForm trucks={trucks} setTrucks={setTrucks} />
         </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
+        
       </Switch>
     </div>
   );
