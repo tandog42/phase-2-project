@@ -6,19 +6,16 @@ import TrucksContainer from "./TrucksContainer";
 import AboutUs from "./AboutUs";
 import NewTruckForm from "./NewTruckForm";
 
-
 function App() {
-  const [trucks, setTrucks] = useState([])
+  const [trucks, setTrucks] = useState([]);
 
-  
-
-useEffect (() => {
-  fetch("http://localhost:3000/trucks")
-  .then(r =>r.json())
-    .then (truck => {
-       setTrucks(truck)
-    })
-  },[])
+  useEffect(() => {
+    fetch("http://localhost:3000/trucks")
+      .then(r => r.json())
+      .then(truck => {
+        setTrucks(truck);
+      });
+  }, []);
 
   return (
     <div className="App">
@@ -27,12 +24,12 @@ useEffect (() => {
         <Route path="/aboutus">
           <AboutUs />
         </Route>
-        
+
         <Route path="/trucks">
-          <TrucksContainer trucks={trucks}/>
+          <TrucksContainer trucks={trucks} />
         </Route>
         <Route path="/new">
-          <NewTruckForm />
+          <NewTruckForm trucks={trucks} setTrucks={setTrucks} />
         </Route>
         <Route exact path="/">
           <Home />

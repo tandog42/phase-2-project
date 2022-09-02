@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 
 function Truck({ truck }) {
   return (
-    <div >
+    <div>
       <Card>
         <CardMedia
           component="img"

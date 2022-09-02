@@ -40,7 +40,6 @@ function NavBar() {
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
-              
             }}
           >
             Midwest Trucks
@@ -68,14 +67,9 @@ function NavBar() {
           <Box sx={{ display: "flex" }}>
             {pages.map(page => (
               <Link to={page.path}>
-                <Button
-                  key={page.path}
-                  sx={{ color: "white" }}
-                >
+                <Button key={page.path} sx={{ color: "white" }}>
                   {page.label}
-                  
                 </Button>
-
               </Link>
             ))}
           </Box>
