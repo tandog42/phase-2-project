@@ -79,16 +79,6 @@
       "mileage": "15,000",
       "price": "28,950",
       "url": "https://i.imgur.com/xXmzH4a.jpeg"
-    },
-    {
-      "year": "2000",
-      "make": "Ford",
-      "model": "Box-Truck",
-      "color": "White",
-      "url": "https://media.istockphoto.com/id/172124825/photo/side-view-of-a-plain-white-truck.webp?s=612x612&w=is&k=20&c=Coy1kdZibxcIY0QrIJUsoxsJYkEmSfPFc0WzwAIi-3M=",
-      "mileage": "123,999",
-      "price": "13,999",
-      "id": 9
     }
   ]
 }
