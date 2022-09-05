@@ -1,5 +1,6 @@
 import React from "react";
 import Truck from "./Truck";
+
 function TrucksContainer({ trucks }) {
   return (
     <div className="truck-container">
