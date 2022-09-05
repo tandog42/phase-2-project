@@ -1,4 +1,4 @@
-# 🛻 Midwest Classic Trucks 🚚
+# 🛻 Midwest Classic Trucks 
  
 
 
@@ -6,7 +6,7 @@
 ---
 
 
- ## 📖 Project Overview.
+ ## 📖 Project Overview
 This application used a json-server to create a RESTful API to allow us to view/add information! It also includes four client side routes using React Router. They are Home, Trucks for Sale, Add Truck, About. That will flawlessly navigate the user within the app. This application has seven components to keep the application neat and running at exceptional speed !
 
 
