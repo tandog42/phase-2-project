@@ -43,8 +43,8 @@ code {
   gap: 25px;
    row-gap: 25px;
 }
+
 .card {
-  
   box-shadow: 0 0 7px 0 #ddd;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -52,23 +52,23 @@ code {
 }
 
 /* cards image */
-.card .image img {
-  
+.card .image img { 
   max-width: 300px;
   max-height: 225px;
   width: auto;
   height: auto;
 }
 
+/* about page */
 .about {
   color: white;
   text-align: center;
   padding-left: 30rem;
   padding-right: 30rem;
-
   font-size: x-large;
 }
 
+/* sales hours */
 .sales-hours {
   color: white;
   text-align: center;
@@ -79,11 +79,13 @@ code {
 ul.no-bullets {
   list-style-type:none ;
 }
+
 .sales-table {
   text-align: center;
   padding-left: 48.5rem;
 }
 
+/* form */
 .input-form {
   text-align: center;
   margin-top: 10rem;
