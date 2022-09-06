@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "./Home";
+import Home from "./static/Home";
 import NavBar from "./NavBar";
 import TrucksContainer from "./TrucksContainer";
-import AboutUs from "./AboutUs";
+import AboutUs from "./static/AboutUs";
 import NewTruckForm from "./NewTruckForm";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Switch>
-      <Route exact path="/">
+        <Route exact path="/">
           <Home />
         </Route>
         <Route path="/aboutus">
@@ -34,7 +34,6 @@ function App() {
         <Route path="/truck/new">
           <NewTruckForm trucks={trucks} setTrucks={setTrucks} />
         </Route>
-        
       </Switch>
     </div>
   );

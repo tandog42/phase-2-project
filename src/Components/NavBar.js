@@ -1,12 +1,10 @@
-import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import CarCrashSharpIcon from '@mui/icons-material/CarCrashSharp';
+import CarCrashSharpIcon from "@mui/icons-material/CarCrashSharp";
 import { Link } from "react-router-dom";
 
 const pages = [
@@ -16,17 +14,13 @@ const pages = [
 ];
 
 function NavBar() {
-  const [anchorElNav, setAnchorElNav] = useState(null);
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <CarCrashSharpIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <CarCrashSharpIcon
+            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+          />
           <Typography
             variant="h6"
             noWrap
@@ -44,25 +38,6 @@ function NavBar() {
           >
             Midwest Trucks
           </Typography>
-
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorElNav}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "left",
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-            open={Boolean(anchorElNav)}
-            onClose={handleCloseNavMenu}
-            sx={{
-              display: { xs: "block", md: "none" },
-            }}
-          ></Menu>
 
           <Box sx={{ display: "flex" }}>
             {pages.map(page => (

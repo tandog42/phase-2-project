@@ -13,7 +13,7 @@ function NewTruckForm({ trucks, setTrucks }) {
   const [price, setPrice] = useState("");
   const [color, setColor] = useState("");
 
-  const history = useHistory(); 
+  const history = useHistory();
   const newTruck = {
     year: year,
     make: make,
