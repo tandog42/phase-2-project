@@ -18,7 +18,7 @@ code {
     monospace;
 }
 
-.HomePage {
+#HomePage {
   text-align: center;
   padding-top: 10rem;
   color: white;
@@ -27,7 +27,7 @@ code {
 
 
 /* Position on cards */
-  .truck-container {
+ #truck-container {
     height: 100%;
     width: 91%;
     padding-left: 10em;
@@ -36,7 +36,7 @@ code {
 
 
   /* Indv card */
-.cards {
+#cards {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -44,7 +44,7 @@ code {
    row-gap: 25px;
 }
 
-.card {
+#card {
   box-shadow: 0 0 7px 0 #ddd;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -52,7 +52,7 @@ code {
 }
 
 /* cards image */
-.card .image img { 
+#card .image img { 
   max-width: 300px;
   max-height: 225px;
   width: auto;
@@ -60,7 +60,7 @@ code {
 }
 
 /* about page */
-.about {
+#about {
   color: white;
   text-align: center;
   padding-left: 30rem;
@@ -69,24 +69,24 @@ code {
 }
 
 /* sales hours */
-.sales-hours {
+#sales-hours {
   color: white;
   text-align: center;
   padding-bottom:10rem;
   font-size: xx-large;
 }
 
-ul.no-bullets {
+ul#no-bullets {
   list-style-type:none ;
 }
 
-.sales-table {
+#sales-table {
   text-align: center;
   padding-left: 48.5rem;
 }
 
 /* form */
-.input-form {
+#input-form {
   text-align: center;
   margin-top: 10rem;
   
@@ -102,3 +102,7 @@ ul.no-bullets {
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
   color: white;
 }
+
+#tabs {
+  padding-left: 65.5rem;
+  }

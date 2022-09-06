@@ -1,5 +1,5 @@
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
+
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
@@ -16,15 +16,14 @@ const pages = [
 function NavBar() {
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="false">
         <Toolbar disableGutters>
           <CarCrashSharpIcon
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+            sx={{ display: { xs: "none", md: "flex" }, mr: 3 }}
           />
           <Typography
             variant="h6"
-            noWrap
-            component="a"
+           component="a"
             href="/"
             sx={{
               mr: 2,
@@ -36,10 +35,10 @@ function NavBar() {
               textDecoration: "none",
             }}
           >
-            Midwest Trucks
+            Midwest Classic Trucks
           </Typography>
 
-          <Box sx={{ display: "flex" }}>
+          <div id="tabs">
             {pages.map(page => (
               <Link to={page.path}>
                 <Button key={page.path} sx={{ color: "white" }}>
@@ -47,7 +46,8 @@ function NavBar() {
                 </Button>
               </Link>
             ))}
-          </Box>
+            </div>
+          
         </Toolbar>
       </Container>
     </AppBar>
