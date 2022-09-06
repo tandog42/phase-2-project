@@ -12,20 +12,20 @@ function NewTruckForm({ trucks, setTrucks }) {
   const [mileage, setMileage] = useState("");
   const [price, setPrice] = useState("");
   const [color, setColor] = useState("");
-
   const history = useHistory();
-  const newTruck = {
-    year: year,
-    make: make,
-    model: model,
-    color: color,
-    url: url,
-    mileage: mileage,
-    price: price,
-  };
 
   function onSubmitHandler(e) {
     e.preventDefault();
+    const newTruck = {
+      year: year,
+      make: make,
+      model: model,
+      color: color,
+      url: url,
+      mileage: mileage,
+      price: price,
+    };
+
     fetch("http://localhost:3000/trucks", {
       method: "POST",
       headers: {
@@ -40,7 +40,7 @@ function NewTruckForm({ trucks, setTrucks }) {
       });
   }
   return (
-    <div className="input-form">
+    <div id="input-form">
       <Box
         component="form"
         onSubmit={onSubmitHandler}

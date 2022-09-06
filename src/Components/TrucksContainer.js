@@ -3,8 +3,8 @@ import Truck from "./Truck";
 
 function TrucksContainer({ trucks }) {
   return (
-    <div className="truck-container">
-      <ul className="cards">
+    <div id="truck-container">
+      <ul id="cards">
         {trucks.map(truck => (
           <Truck key={truck.id} truck={truck} />
         ))}
