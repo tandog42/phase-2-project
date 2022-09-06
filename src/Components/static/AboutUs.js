@@ -3,9 +3,9 @@ import React from "react";
 function AboutUs() {
   return (
     <div>
-      <div className="sales-hours">
+      <div id="sales-hours">
         <h2>Sales Hours</h2>
-        <table className="sales-table">
+        <table id="sales-table">
           <tbody>
             <tr>
               <td>Monday 10am - 6pm</td>
@@ -32,12 +32,12 @@ function AboutUs() {
         </table>
       </div>
 
-      <div className="about">
+      <div id="about">
         Hello, My name is Tanner, I am the owner of Midwest Classic Trucks LLC.
         We have been in the classic truck business for 25 years! If you have any
         questions or looking to finance. Give my office a call at
         612-233-4433, we will be happy to help!
-        <ul className="no-bullets">
+        <ul id="no-bullets">
           <li>Midwest Classic Trucks</li>
           <li>123 Main Street.</li>
           <li>Minneapolis, MN.</li>

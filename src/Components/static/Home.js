@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="HomePage">
+    <div id="HomePage">
       <h1>
         Welcome to Midwest Classic Trucks LLC,
         <br></br>
