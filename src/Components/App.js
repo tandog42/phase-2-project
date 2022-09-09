@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./static/Home";
 import NavBar from "./NavBar";
@@ -9,13 +9,13 @@ import NewTruckForm from "./NewTruckForm";
 function App() {
   const [trucks, setTrucks] = useState([]);
 
-  useEffect(() => {
+  
     fetch("http://localhost:3000/trucks")
       .then(r => r.json())
       .then(truck => {
         setTrucks(truck);
       });
-  }, []);
+  
 
   return (
     <div className="App">

@@ -79,16 +79,7 @@
       "mileage": "15,000",
       "price": "28,950",
       "url": "https://i.imgur.com/xXmzH4a.jpeg"
-    },
-    {
-      "year": "2019",
-      "make": "Ford",
-      "model": "fusion",
-      "color": "white",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvU48Ku4FJF0bGnz4wRowD1v9w0CI_QAPIoQk0aopI&s",
-      "mileage": "123",
-      "price": "20,000",
-      "id": 9
     }
+   
   ]
 }
