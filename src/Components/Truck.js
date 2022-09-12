@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 
 function Truck({ truck }) {
+
   return (
     <div>
       <Card>

@@ -1,5 +1,4 @@
 import AppBar from "@mui/material/AppBar";
-
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
@@ -41,7 +40,7 @@ function NavBar() {
           <div id="tabs">
             {pages.map(page => (
               <Link to={page.path}>
-                <Button key={page.path} sx={{ color: "white" }}>
+                <Button key={page.label} sx={{ color: "white" }}>
                   {page.label}
                 </Button>
               </Link>

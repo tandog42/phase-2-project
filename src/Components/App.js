@@ -9,13 +9,11 @@ import NewTruckForm from "./NewTruckForm";
 function App() {
   const [trucks, setTrucks] = useState([]);
 
-  
-    fetch("http://localhost:3000/trucks")
-      .then(r => r.json())
-      .then(truck => {
-        setTrucks(truck);
-      });
-  
+  fetch("http://localhost:3000/trucks")
+    .then(r => r.json())
+    .then(truck => {
+      setTrucks(truck)
+    });
 
   return (
     <div className="App">
@@ -27,7 +25,6 @@ function App() {
         <Route path="/aboutus">
           <AboutUs />
         </Route>
-
         <Route path="/trucks">
           <TrucksContainer trucks={trucks} />
         </Route>
