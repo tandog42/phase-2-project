@@ -6,13 +6,14 @@ import TrucksContainer from "./TrucksContainer";
 import AboutUs from "./static/AboutUs";
 import NewTruckForm from "./NewTruckForm";
 
+
 function App() {
   const [trucks, setTrucks] = useState([]);
 
   fetch("http://localhost:3000/trucks")
     .then(r => r.json())
-    .then(truck => {
-      setTrucks(truck)
+    .then(allTrucks => {
+      setTrucks(allTrucks)
     });
 
   return (

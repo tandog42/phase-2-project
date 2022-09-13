@@ -7,9 +7,9 @@ import CarCrashSharpIcon from "@mui/icons-material/CarCrashSharp";
 import { Link } from "react-router-dom";
 
 const pages = [
-  { path: "/trucks", label: "Trucks for Sale" },
-  { path: "/truck/new", label: "Add a Truck" },
-  { path: "/aboutus", label: "About Us" },
+  { id: 1, path: "/trucks", label: "Trucks for Sale" },
+  { id: 2, path: "/truck/new", label: "Add a Truck" },
+  { id: 3, path: "/aboutus", label: "About Us" },
 ];
 
 function NavBar() {
@@ -22,7 +22,7 @@ function NavBar() {
           />
           <Typography
             variant="h6"
-           component="a"
+            component="a"
             href="/"
             sx={{
               mr: 2,
@@ -39,14 +39,11 @@ function NavBar() {
 
           <div id="tabs">
             {pages.map(page => (
-              <Link to={page.path}>
-                <Button key={page.label} sx={{ color: "white" }}>
-                  {page.label}
-                </Button>
+              <Link key={page.id} to={page.path}>
+                <Button sx={{ color: "white" }}>{page.label}</Button>
               </Link>
             ))}
-            </div>
-          
+          </div>
         </Toolbar>
       </Container>
     </AppBar>
